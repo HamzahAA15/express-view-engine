@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users Table</title>
+  </head>
+  <body>
+    <h1>Users Table</h1>
+    <a href="/register">tambah user</a>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Email</th>
+          <th>Nomor HP</th>
+          <th>Jumlah Amal</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% users.forEach((user)=>{ %>
+        <tr>
+          <td><%= user.email %></td>
+          <td><%= user.nomorHP %></td>
+          <td><%= user.jumlahAmal %></td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </body>
+</html>

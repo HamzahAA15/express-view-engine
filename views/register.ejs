@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+    <form action="/register" method="POST">
+      <label for="email">email</label>
+      <br />
+      <input type="email" name="email" placeholder="input email" />
+      <br />
+      <label for="phone">nomor HP</label>
+      <br />
+      <input
+        type="tel"
+        id="phone"
+        name="nomorHP"
+        pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}"
+      />
+      <br />
+      <small>Format: 1234-5678-6789</small><br />
+      <label for="quantity">jumlah amal</label>
+      <br />
+      <input
+        type="number"
+        id="quantity"
+        name="jumlahAmal"
+        min="1000"
+        max="100000"
+        value="100000"
+        placeholder="input jumlah amal"
+      />
+      <br />
+      <button type="submit">Sign up</button>
+    </form>
+  </body>
+</html>
